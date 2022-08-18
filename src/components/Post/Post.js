@@ -1,5 +1,28 @@
 import './Post.css'
+import { useState } from 'react';
+import { FaHeart, FaRegComment, FaShare } from "react-icons/fa";
+
 export default function Post(){
+
+    const [curtir,setCurtir]=useState(false);
+    const [comentar,setComentar]=useState(false);
+    const [compartilhar, setCompartilhar]=useState(false);
+
+    function curtirAcao(){
+        setCurtir(!curtir);
+    }
+
+    function comentarAcao(){
+        setComentar(!comentar)
+    }
+
+    function compartilharAcao(){
+        setCompartilhar(!compartilhar)
+    }
+
+
+
+
     return(
         <div className="card">
             <div className="header--card">
@@ -8,13 +31,10 @@ export default function Post(){
             </div>
             <img className="img--post" src='https://www.estrelando.com.br/uploads/2021/09/06/caio-ribeiro-1630944317.jpg'/>
             <div className="interacao">
-                <button>Curtir</button>
-                <button>Comentar</button>
-                <button>Compartilhar</button>
+                <button onClick={curtirAcao}>Curtir <FaHeart id="faHeart" style={{color:curtir?"red":"grey"}} /></button>
+                <button onClick={comentarAcao}>Comentar <FaRegComment id="faComment" style={{color:comentar?"red":"grey"}}/> </button>
+                <button onClick={compartilharAcao}>Compartilhar <FaShare id="faShare" style={{color:compartilhar?"red":"grey"}}/> </button>
             </div>
-
-
-
         </div>
     )
 }

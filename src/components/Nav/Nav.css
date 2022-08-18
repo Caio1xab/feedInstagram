@@ -23,3 +23,8 @@ ul {
     background-color: rgb(114, 113, 113);
   }
   
+  #darkMode{
+    font-size: 30px;
+    margin-right: 15px;
+    float:right;
+  }

@@ -2,31 +2,35 @@ body{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 .card{
+    box-shadow: 15px 15px 60px rgba(0,0,0,0.15);
     background-color: white;
     display:flex;
     flex-direction:column;
     align-items: center;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     width:25%;
     margin: 150px auto;
     padding: 70px;
 }
-.header--card{
+.card .header--card{
     display: flex;
+    padding-right: 214px;
     width: 400px;
     flex-direction:row;
     align-items: center;
     justify-content: center;
 }
 
-.header-name h3 p{
-    font-size: 6px;
+.card .header--card .header-Name h2 span{
+    font-size: 13px;
 }
 
 .img-1{
     width: 50px;
     height: 50px;
-    border-radius: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
 }
 .img--post{
     height:400px;
@@ -36,9 +40,12 @@ body{
 
 button{
     justify-content: flex-start;
-    background-color: rgb(119, 0, 0);
-    color: white;
+    background-color: transparent;
+    color: grey;
     margin-top: 5px;
     padding: 10px;
     border-radius: 7px;
+    border: none;
 }
+
+

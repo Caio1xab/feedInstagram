@@ -1,4 +1,5 @@
 import "./Nav.css";
+import {TbMoon} from 'react-icons/tb'
 
 export default function Nav(){
     return(
@@ -7,6 +8,7 @@ export default function Nav(){
             <li><a href="algo">Página Inicial</a></li>
             <li><a href="algo">News</a></li>
             <li><a href="algo">Contato</a></li>
+            <button id="darkMode"> <TbMoon /> </button>
         </ul>
         </div>
     );
