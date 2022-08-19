@@ -15,7 +15,7 @@ ul {
     color:black;
     font-weight: bold;
     text-align: center;
-    padding: 14px 16px;
+    padding: 22px 16px;
     text-decoration: none;
   }
   
@@ -24,7 +24,7 @@ ul {
   }
   
   #darkMode{
-    font-size: 30px;
+    font-size: 34px;
     margin-right: 15px;
     float:right;
   }
