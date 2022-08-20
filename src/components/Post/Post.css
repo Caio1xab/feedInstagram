@@ -1,40 +1,55 @@
 
 .card{
-    box-shadow: 15px 15px 60px rgba(0,0,0,0.15);
     background-color: white;
     display:flex;
     flex-direction:column;
     align-items: center;
-    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 15px 15px 60px rgba(0,0,0,0.30);
     width:25%;
-    margin: 150px auto;
+    margin: 80px auto;
     padding: 70px;
+}
+
+.dots{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 240px;
+    bottom: 9px;
 }
 .card .header--card{
     display: flex;
-    padding-right: 214px;
-    width: 400px;
-    flex-direction:row;
+    padding-right: 210px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.card .header--card .header-Name h2{
+   font-size: larger;
 }
 
 .card .header--card .header-Name h2 span{
+    color: gray;
     font-size: 13px;
+    font-weight: 400;
 }
 
 .img-1{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    overflow: hidden;
     margin-right: 8px;
 }
 .img--post{
-    height:400px;
-    width:400px;
+    height:450px;
+    width:450px;
 }
 
+.card .interacao .profileComment span{
+    justify-content: left;
+    text-align: left;
+    color: rgb(142, 142, 142);
+}
 
 button{
     justify-content: flex-start;

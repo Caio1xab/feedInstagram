@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(253, 253, 253);
+    border-bottom: 1px solid rgb(226, 32, 109);
   }
   
   li {
@@ -20,11 +20,6 @@ ul {
   }
   
   li a:hover:not(.active) {
-    background-color: rgb(114, 113, 113);
-  }
-  
-  #darkMode{
-    font-size: 34px;
-    margin-right: 15px;
-    float:right;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
   }
