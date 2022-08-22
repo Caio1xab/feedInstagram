@@ -5,9 +5,11 @@ import Perfil from './components/Pages/Perfil/Perfil';
 import Post from './components/Post/Post';
 
 function App(){
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-  <div className="App">
-      <Nav />
+  <div className="App" style={{backgroundColor:darkMode?"#222":"white"}}>
+      <Nav darkMode={darkMode} setDarkMode={setDarkMode} /> 
       <Post />
   </div> 
   );

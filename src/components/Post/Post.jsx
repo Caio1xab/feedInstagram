@@ -33,7 +33,10 @@ export default function Post(){
             <img className="img--post" src='http://www.nelsonkon.com.br/wp-content/uploads/2019/11/cubatao_xecutm_01_ipsis.jpg'/>
             <div className="interacao">
                 <div className='profileComment'>
-                <h5>Caioxab.exe   <span>  Praesent sit amet tellus sapien. Aenean posuere felis vehicula, tincidunt dui vitae.</span></h5> </div>
+                <img className="img-1-bottom" src="https://cdn.iconscout.com/icon/free/png-256/person-1780868-1514183.png"/>
+                
+                <h5>Caioxab.exe       <span>  Praesent sit amet tellus sapien. Aenean posuere felis vehicula, tincidunt dui vitae.</span></h5> </div>
+
                 <button onClick={curtirAcao}>Curtir <FaHeart id="faHeart" style={{color:curtir?"red":"grey"}} /></button>
                 <button onClick={comentarAcao}>Comentar <FaRegComment id="faComment" style={{color:comentar?"red":"grey"}}/> </button>
                 <button onClick={compartilharAcao}>Compartilhar <FaShare id="faShare" style={{color:compartilhar?"red":"grey"}}/> </button>
