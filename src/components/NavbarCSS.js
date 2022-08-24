@@ -1,4 +1,4 @@
 import styled from 'styled-components'
-export const li = styled.li`
+export const Lista = styled.li`
   color: grey;
 `
